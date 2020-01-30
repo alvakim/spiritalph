@@ -1,0 +1,126 @@
+body{
+	font-family:irmologion ucs, feofan ucs, pochaevsk ucs, evangelie ucs;
+	font-size: 32px;
+	background-color:#EFEFBD;
+	background-image: url(../img/back_grad1.jpg);
+	background-repeat: repeat-y;
+}
+
+h1{
+	font-family:slavjanic ucs, irmologion ucs, feofan ucs, pochaevsk ucs, evangelie ucs;
+	font-weight: lighter;
+	color:red;
+	font-size:220%;
+	text-align:center;
+
+}
+
+h1.book {
+	font-size:250%;
+}
+
+h2{
+	font-family:pochaevsk ucs, irmologion ucs, feofan ucs, evangelie ucs;
+	color:red;
+	font-size:110%;
+	text-align:center;
+	font-weight: normal;
+}
+h2.complete{
+	color:red;
+}
+h2.more{
+	color:#ff9999;
+}
+
+span.number{
+	font-family: evangelie ucs, irmologion ucs, feofan ucs, pochaevsk ucs;
+	color:red;
+	font-size:110%;
+}
+span.ref{
+	font-family: pochaevsk ucs, irmologion ucs, feofan ucs, evangelie ucs;
+	color:red;
+	font-size:80%;
+}
+span.footnote{
+	font-family: pochaevsk ucs, irmologion ucs, feofan ucs, evangelie ucs;
+	color:black;
+	font-size:60%;
+}
+
+.init{
+	font-family: Indycton UCS, irmologion ucs, feofan ucs, pochaevsk ucs, evangelie ucs;
+	font-size: 80px;
+	font-weight: normal;
+	color:red;
+	float:left;
+}
+
+td.letter{
+	font-family: Indycton UCS, irmologion ucs, feofan ucs, pochaevsk ucs, evangelie ucs;
+	font-size: 48px;
+	font-weight: normal;
+	color:red;
+}
+
+span.more{
+	color:#888888;
+}
+
+p{
+	text-align:left;
+	font-size:32px;
+	letter-spacing:normal;
+}
+p.part{
+	font-family: pochaevsk ucs, irmologion ucs, feofan ucs, evangelie ucs;
+	color:red;
+	font-size:80%;
+	margin-bottom:-30px;
+	margin-left:70px;	
+}
+p.inscription{
+	font-family: irmologion ucs, feofan ucs, pochaevsk ucs, evangelie ucs;
+	color:red;
+	font-size:90%;
+}
+p.subtitle{
+	color:red;
+	font-size:90%;
+	text-align:center;
+}
+p.menu{
+	text-align:right;
+	/*float:right;*/
+	font-family: irmologion ucs, feofan ucs, pochaevsk ucs, evangelie ucs;
+	font-size:40%;
+	margin-top:-30px;
+}
+
+p.autor{
+	color:red;
+	font-size:90%;
+	text-align:center;
+}
+
+ul.toc{
+	list-style-type: none;
+}
+
+ul.toc li{
+	font-size:80%;
+}
+
+a{
+	text-decoration:none;
+	color:red;
+}
+span.versetitle{
+	color:red;
+	font-size:80%;
+}
+span.versesubtitle{
+	color:black;
+	font-size:80%;
+}

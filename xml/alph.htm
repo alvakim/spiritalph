@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta name="GENERATOR" content="Microsoft Visual Studio 6.0">
+<title></title>
+<link rel="stylesheet" href="styles.cs">
+
+<script language="javascript">
+var xmldoc = new ActiveXObject("MSXML2.DOMDocument.3.0");
+xmldoc.async = false;
+
+var xsltbl = new ActiveXObject("MSXML2.DOMDocument.3.0");
+xsltbl.async = false;
+
+function winonload(){
+	xmldoc.load("alph.xml");
+	if(xmldoc.parseError.errorCode)
+		alert("Error parsing xml document\n"+xmldoc.parseError.reason);
+		
+	xsltbl.load("alph.xsl");
+	if(xsltbl.parseError.errorCode)
+		alert("Error parsing xsl table\n"+xsltbl.parseError.reason);
+		
+	out.innerHTML = xmldoc.transformNode(xsltbl);
+};
+</script>
+</head>
+<body language="javascript" onload="winonload();">
+
+<div id="out"></div>
+</body>
+</html>

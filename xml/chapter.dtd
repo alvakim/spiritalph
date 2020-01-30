@@ -1,0 +1,21 @@
+<!ELEMENT chapter (title, inscription, verse*)>
+<!ATTLIST chapter
+	part CDATA #REQUIRED
+	chapt CDATA #REQUIRED
+	verse_cnt CDATA #REQUIRED
+>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT inscription (#PCDATA)>
+<!ELEMENT verse (#PCDATA | ref | footnote)*>
+<!ATTLIST verse
+	number CDATA #REQUIRED
+>
+<!ELEMENT ref (#PCDATA)>
+<!ELEMENT footnote (#PCDATA)>
+<!--ELEMENT init (#PCDATA)-->
+<!ELEMENT verses (title, subtitle, (inscription?, verse)*)>
+<!ATTLIST verses
+	nr CDATA #REQUIRED
+	verse_cnt CDATA #REQUIRED
+>
+<!ELEMENT subtitle (#PCDATA)>

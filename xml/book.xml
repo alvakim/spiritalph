@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="Windows-1251"?>
+<!DOCTYPE book [
+	<!ELEMENT book (title, autor, intro*, part*, verses*)>
+	<!ELEMENT title (#PCDATA)>
+	<!ELEMENT autor (#PCDATA)>
+	<!ELEMENT part (chapter|verses)*>
+	<!ATTLIST part
+	title CDATA #REQUIRED
+		chapter_count CDATA #REQUIRED
+	>
+	<!ELEMENT intro EMPTY>
+	<!ATTLIST intro
+		file CDATA #REQUIRED
+	>
+	
+	<!ELEMENT chapter EMPTY>
+	<!ATTLIST chapter
+		file CDATA #REQUIRED
+	>
+	
+	<!ELEMENT verses EMPTY>
+	<!ATTLIST verses
+		file CDATA #REQUIRED
+	>
+]>
+<?xml-stylesheet type="text/xsl" href="book.xsl"?>
+<book>
+	<title>Ґлфави1тъ дух0вный</title>
+	<autor>свzти1телz дими1тріz рост0вскагw</autor>
+	<intro file="intro.xml"/>
+	<intro file="foreword.xml"/>
+	<part title="Чaсть пeрваz" chapter_count="12">
+		<chapter file="p1.xml"/>
+		<chapter file="p2.xml"/>
+		<chapter file="p3.xml"/>
+		<chapter file="p4.xml"/>
+		<chapter file="p5.xml"/>
+		<chapter file="p6.xml"/>
+		<chapter file="p7.xml"/>
+		<chapter file="p8.xml"/>
+		<chapter file="p9.xml"/>
+		<chapter file="p10.xml"/>
+		<chapter file="p11.xml"/>
+		<chapter file="p12.xml"/>
+	</part>
+	<part title="Чaсть вторaz" chapter_count="10">
+		<chapter file="p13.xml"/>
+		<chapter file="p14.xml"/>
+		<chapter file="p15.xml"/>
+		<chapter file="p16.xml"/>
+		<chapter file="p17.xml"/>
+		<chapter file="p18.xml"/>
+		<chapter file="p19.xml"/>
+		<chapter file="p20.xml"/>
+		<chapter file="p21.xml"/>
+		<chapter file="p22.xml"/>
+	</part>
+	<part title="Чaсть трeтіz" chapter_count="11">
+		<chapter file="p23.xml"/>
+		<chapter file="p24.xml"/>
+		<chapter file="p25.xml"/>
+		<chapter file="p26.xml"/>
+		<chapter file="p27.xml"/>
+		<chapter file="p28.xml"/>
+		<chapter file="p29.xml"/>
+		<chapter file="p30.xml"/>
+		<chapter file="p31.xml"/>
+		<chapter file="p32.xml"/>
+		<chapter file="p33.xml"/>
+	</part>
+	<part title="СтіхослHвіz рачи1тельнагw къ бGу вопіeніz, глави1знъ пsть" chapter_count="5">
+		<verses file="p34.xml"/>
+		<verses file="p35.xml"/>
+		<verses file="p36.xml"/>
+		<verses file="p37.xml"/>
+		<verses file="p38.xml"/>
+	</part>
+</book>

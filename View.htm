@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta name="GENERATOR" content="Microsoft Visual Studio 6.0">
+<link rel="stylesheet" href="xml/styles.cs">
+</style>
+<script language="javascript">
+function winonload(){
+	var xmldoc = new ActiveXObject("MSXML2.DOMDocument.3.0");
+	xmldoc.async = false;
+	xmldoc.load("xml/book.xml");
+	
+	var xsltbl = new ActiveXObject("MSXML2.DOMDocument.3.0");
+	xsltbl.async = false;
+	xsltbl.load("xml/book.xsl");
+	
+	out.innerHTML = xmldoc.transformNode(xsltbl);
+};
+
+</script>
+</head>
+<body language="javascript" onload="winonload();">
+
+<div id="out"></div>
+</body>
+</html>

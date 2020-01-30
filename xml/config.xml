@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE config [
+	<!ELEMENT config (transformation)>
+	<!-- параметры преобразования
+			mode: режим
+						static - преобразование в статические страницы
+						dynamic - преобразования для просмотра через viewer -->
+	<!ELEMENT transformation EMPTY>
+	<!ATTLIST transformation
+	mode (static | dynamic) "dynamic"
+>
+]>
+<config>
+	<transformation mode="static"/>
+</config>
